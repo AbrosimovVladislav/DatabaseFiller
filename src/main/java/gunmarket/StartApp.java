@@ -2,16 +2,14 @@ package gunmarket;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @EnableScheduling
 @SpringBootApplication
-@EntityScan("ru.gunmarket.model")
-public class StartAppDatabaseFiller {
+public class StartApp {
 
     public static void main(String[] args) {
-        SpringApplication.run(StartAppDatabaseFiller.class);
+        SpringApplication.run(StartApp.class);
     }
 
 }
